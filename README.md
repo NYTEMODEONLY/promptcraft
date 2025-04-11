@@ -2,7 +2,7 @@
 
 PromptCraft is a specialized tool designed to transform your ideas and project descriptions into well-structured formats optimized for the Cursor AI IDE. By leveraging the power of Grok 3, this application helps developers create more effective prompts that follow best practices for AI-assisted development.
 
-![PromptCraft Screenshot](public/placeholder.svg)
+![PromptCraft Screenshot](public/screenshot.png)
 
 ## Features
 
