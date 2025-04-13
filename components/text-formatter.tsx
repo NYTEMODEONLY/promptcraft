@@ -226,18 +226,10 @@ export function TextFormatter() {
               {isProcessing ? (
                 <div className="absolute inset-0 flex flex-col items-center justify-center bg-slate-50 bg-opacity-90">
                   <div className="flex flex-col items-center space-y-4">
-                    <div className="relative">
-                      <Brain className="h-12 w-12 text-slate-400" />
-                      <div className="absolute top-0 left-0 h-12 w-12 animate-pulse">
-                        <div className="h-6 w-6 border-4 border-slate-500 border-t-transparent rounded-full animate-spin"></div>
-                      </div>
-                    </div>
+                    <Loader2 className="h-12 w-12 text-slate-500 animate-spin" />
                     <div className="flex flex-col items-center">
-                      <p className="text-slate-700 font-medium">Grok 3 is thinking{processingDots}</p>
+                      <p className="text-slate-700 font-medium">{`Grok 3 is processing${processingDots}`}</p>
                       <p className="text-slate-500 text-sm mt-1">This may take a few moments</p>
-                    </div>
-                    <div className="w-48 h-1.5 bg-slate-200 rounded-full overflow-hidden">
-                      <div className="h-full bg-slate-500 rounded-full animate-progress"></div>
                     </div>
                   </div>
                 </div>
