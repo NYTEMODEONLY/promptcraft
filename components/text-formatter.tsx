@@ -229,7 +229,7 @@ export function TextFormatter() {
                     <div className="relative">
                       <Brain className="h-12 w-12 text-slate-400" />
                       <div className="absolute top-0 left-0 h-12 w-12 animate-pulse">
-                        <Brain className="h-12 w-12 text-slate-600" />
+                        <div className="h-6 w-6 border-4 border-slate-500 border-t-transparent rounded-full animate-spin"></div>
                       </div>
                     </div>
                     <div className="flex flex-col items-center">
