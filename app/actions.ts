@@ -20,7 +20,7 @@ export async function processText(input: string): Promise<{ text: string; error?
         Authorization: `Bearer ${apiKey}`,
       },
       body: JSON.stringify({
-        model: "grok-3", // Using Grok 3 model
+        model: "grok-3-latest", // Using the latest Grok 3 model
         messages: [
           {
             role: "system",
