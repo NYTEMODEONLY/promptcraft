@@ -1,7 +1,7 @@
 "use server"
 
-// Model name as a constant for use in UI
-export const AI_MODEL = "grok-3-latest";
+// Model name as a constant for use in UI (commented out to comply with 'use server' restrictions)
+// export const AI_MODEL = "grok-3-latest";
 
 export async function processText(input: string): Promise<{ text: string; error?: string }> {
   try {

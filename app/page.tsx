@@ -1,7 +1,9 @@
 import { TextFormatter } from "@/components/text-formatter"
 import { ApiKeyInfo } from "@/components/api-key-info"
 import { Footer } from "@/components/footer"
-import { AI_MODEL } from '@/app/actions'
+// import { AI_MODEL } from '@/app/actions'
+// Hardcoding model name since it can't be imported from a 'use server' file
+const AI_MODEL = "grok-3-latest";
 
 export default function Home() {
   // Check if API key exists
