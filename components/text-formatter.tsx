@@ -222,7 +222,7 @@ export function TextFormatter() {
                 )}
               </div>
             </div>
-            <div className="bg-slate-50 border rounded-md p-3 min-h-[300px] whitespace-pre-wrap text-slate-800 overflow-auto relative">
+            <div className="bg-slate-50 border rounded-md p-3 min-h-[300px] max-h-[300px] whitespace-pre-wrap text-slate-800 overflow-y-auto relative">
               {isProcessing ? (
                 <div className="absolute inset-0 flex flex-col items-center justify-center bg-slate-50 bg-opacity-90">
                   <div className="flex flex-col items-center space-y-4">
