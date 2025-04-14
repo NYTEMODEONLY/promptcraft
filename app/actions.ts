@@ -1,5 +1,8 @@
 "use server"
 
+// Model name as a constant for use in UI
+export const AI_MODEL = "grok-3-latest";
+
 export async function processText(input: string): Promise<{ text: string; error?: string }> {
   try {
     // Check if API key exists and has the correct format for xAI
@@ -20,7 +23,7 @@ export async function processText(input: string): Promise<{ text: string; error?
         Authorization: `Bearer ${apiKey}`,
       },
       body: JSON.stringify({
-        model: "grok-3-latest", // Using the latest Grok 3 model
+        model: AI_MODEL, // Using the latest Grok 3 model
         messages: [
           {
             role: "system",
