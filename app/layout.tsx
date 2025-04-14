@@ -17,11 +17,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="icon" href="/lightbulb-icon.png" type="image/png" />
-      </head>
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="h-screen overflow-hidden">
+      <body className={`${inter.className} h-screen overflow-hidden`}>{children}</body>
     </html>
   )
 }

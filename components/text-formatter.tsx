@@ -82,7 +82,13 @@ export function TextFormatter() {
       if (result.error) {
         setError(result.error)
       } else {
-        setOutput(result.text)
+        // Clean output by removing common pleasantries
+        let cleanedText = result.text;
+        // Remove common starting phrases
+        cleanedText = cleanedText.replace(/^Hello!|Hi there!|Hey!|Greetings!|Hello,|Hi,|Hey there,|Dear user,|Hello there,|\*\*Hello\*\*|\*\*Hi\*\*|^I'm happy to help|^I'm glad to assist|How can I help you\?/gi, '').trim();
+        // Remove common ending phrases
+        cleanedText = cleanedText.replace(/Let me know if you have any questions\.|Feel free to ask if you need further assistance\.|I hope this helps!|Let me know if you need anything else\.|Have a great day!|Best regards,|Cheers,|Thanks for asking!|If you have any other questions, just ask\.|I'm here to help with anything else\.|\*\*Best wishes\*\*|\*\*Regards\*\* $/gi, '').trim();
+        setOutput(cleanedText);
       }
     } catch (error) {
       console.error("Error processing text:", error)
