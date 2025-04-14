@@ -1,3 +1,5 @@
+"use client"
+
 import { TextFormatter } from "@/components/text-formatter"
 import { ApiKeyInfo } from "@/components/api-key-info"
 import { Footer } from "@/components/footer"
